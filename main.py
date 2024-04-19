@@ -10,10 +10,10 @@ from prophet.plot import plot_plotly
 from services import load_data, plot_data, plot_multiple_data, plot_volume
 
 # Set page layout to wide
-st.set_page_config(layout="wide", page_title="Forcastify", page_icon="📈")
+st.set_page_config(layout="wide", page_title="StockX", page_icon="📈")
 
 # Sidebar
-st.sidebar.markdown("<h1 style='text-align: center; font-size: 30px;'><b>Forcasti.</b><b style='color: orange'>fy</b></h1>", unsafe_allow_html=True)
+st.sidebar.markdown("<h1 style='text-align: center; font-size: 30px;'><b>StockX.</b><b style='color: orange'>fy</b></h1>", unsafe_allow_html=True)
 st.sidebar.title("Options")
 start_date_key = str(uuid.uuid4())
 start_date = st.sidebar.date_input("Start date", date(2018, 1, 1), key=start_date_key)
